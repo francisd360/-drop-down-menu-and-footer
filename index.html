@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1"/>
+    <title> Drop Down</title>
+    </head>
+    <body>
+      <div class="container">
+        <button class="btn" id="code"> menu </button> 
+       
+            <nav class="create">
+          <a href="#"> home</a>
+          <a href="#"> about</a>
+          <a href="#">  services</a>
+          <a href="#"> message us</a>
+        </nav>
+      </div>
+    </body>
+    <main> </main>
+    <header> </header>
+        <footer>
+            
+        <div class="pagination">
+            <ol>
+   <li><a href="image-gallary-lightbox.html"> prev page </a></li>
+               
+  <li><a href="https://wa.me/+2348114741389"> whatsapp</a></li>
+   <!--  <li><a href="https://fb.me/https://www.facebook.com/profile.php?id=100093016485244"> facebook</a></li> -->
+  <li><a href="solo learn.html"> next page</a></li>
+            </ol>
+           
+        </div>
+    </footer>
+</html>
+<style>
+    @media screen and(min-width: 700px){
+  body{
+      
+     background-color: red;
+      
+    }
+     }
+     
+  .container::after{
+    content: "";
+    position: relative;
+    display inline-block;
+    clear: both;
+    
+    
+  }
+  .container{
+     max-width: 100%;
+  }
+  #code{
+    background-image: radial-gradient(circle at left, aqua, grey, fuchsia);
+    width: 50px;
+    height: 50px;
+    border: 2px solid inset;
+    border-radius: 15px;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    
+  }
+  #code:hover{
+     opacity: 0;
+     transition-duration: 1s;
+     transition-delay: 1s; 
+     tr	ansition-timing-function: ease-in-out;
+  }
+  .create{
+    position: absolute;
+   width: 100%;
+    transition: height 1s;
+    overflow: hidden;
+    height: 0px;
+    background-color: #9c95ff;
+    border-radius: 1px 5px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: space-evenly;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2.55px 3px black;
+    transition-duration: 2s;
+    
+ 
+   }
+   .container:hover> .create{
+       height: 150px;
+       width: 100%;
+       top: 0;
+       left: 0;
+      
+      
+       
+   }
+   .create> a{
+       display: block;
+       text-decoration: none;
+       padding: 8px 5px;
+       background: none;
+       width: 150px;
+       height: available;
+       border: none;
+       text-align: center;
+       text-transform: uppercase;
+       text-align: left;
+       color: white;
+       font-family: fantasy;
+       
+       
+   }
+   .create> a:hover{
+       background-color: #173459;
+       color: black;
+       border: none;
+       text-shadow: 0 2px 2px black;
+       border-radius: 5px;
+       width: 100%;
+       height: fit-content;
+       color: white;
+       font-family: serif;
+       box-shadow: 0 5px 5px black;
+      
+   }
+   
+    .pagination{
+        margin: 0 auto;
+        padding: 0 auto;
+      
+       
+    }
+    main{
+        flex: 1 0 auto;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        position: fixed;
+        
+    }
+    
+    .pagination> ol{
+   text-align: center;
+   list-style-type: none;
+   line-height: 50px;
+   margin: 0 auto;
+   padding: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+   
+   gap: 1rem;
+   
+       
+        
+    }
+    footer{
+        background: #333;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    
+      li> a{
+     display: inline;
+        text-decoration: none;
+        background: #333;
+        color: white;
+        border: outset;
+        padding: 2px;
+        border: 2px groove;
+       border-color: aqua;
+       word-spacing: normal;
+        white-space: pre;
+        border-radius: 10px;
+        overflow: auto;
+        box-shadow: 0 2px 2px gray;
+        font-family: serif;
+
+}
+li> a:hover{
+    background: #333;
+    color: white;
+    font-family: fantasy;
+    border: 2px groove black;
+    box-shadow: 0 2px 2px fuchsia;
+    
+}
+
+    html{
+    <!-- background-properties-over-here -->
+        margin: 0 auto;
+        padding: 0 auto;
+        background-color: #6677bf;
+        background-size: initial;
+        background-position: fixed;
+        max-width: 100%;
+        height: auto;
+        
+        }
+        *{
+        <!--- unversal control -->
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            
+        }
+        </style>
